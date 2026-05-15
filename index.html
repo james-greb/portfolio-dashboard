@@ -294,7 +294,7 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-05-15 09:01 UTC
+        Multi-strategy analysis · Updated 2026-05-15 09:57 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
@@ -318,21 +318,22 @@
     <div class="pulse-tile">
       <div class="ptlabel">Stress Score</div>
       <div class="ptvalue" style="color:
-        var(--yellow)
+        var(--orange)
         ">
-        3.2/10
+        6.2/10
       </div>
-      <div class="ptsub">Calm</div>
+      <div class="ptsub">Stressed</div>
     </div>
 
     <!-- Tail hedge -->
     <div class="pulse-tile">
       <div class="ptlabel">Tail Hedge Signal</div>
       <div class="ptvalue" style="color:
-        var(--green)">
-        3/10
+        var(--red)
+        ">
+        7.0/10
       </div>
-      <div class="ptsub">HOLD/TRIM</div>
+      <div class="ptsub">ADD</div>
     </div>
 
     <!-- Macro quadrant -->
@@ -343,17 +344,18 @@
         ">
         Expansion
       </div>
-      <div class="ptsub">2.4% CPI · 1.8% INDPRO</div>
+      <div class="ptsub">3.7% CPI · 0.8% INDPRO</div>
     </div>
 
     <!-- Fed -->
     <div class="pulse-tile">
       <div class="ptlabel">Fed Stance</div>
       <div class="ptvalue" style="font-size:15px;color:
-        var(--muted)">
-        Neutral
+        var(--green)
+        ">
+        Dovish
       </div>
-      <div class="ptsub">2026-06-17</div>
+      <div class="ptsub">2026-06-10</div>
     </div>
 
     <!-- BOCPD stability -->
@@ -363,7 +365,7 @@
         var(--green)">
         Stable
       </div>
-      <div class="ptsub">88d current run</div>
+      <div class="ptsub">197d current run</div>
     </div>
   </div>
 
@@ -376,16 +378,17 @@
     <div class="lens-card tail-risk">
       <div class="lens-name">Tail Risk &amp; Convexity Strategy</div>
       <div class="lens-stance" style="color:
-        var(--green)">
-        Low Risk — TRIM
+        var(--red)
+        ">
+        Elevated Risk — BUY
       </div>
-      <div class="lens-body">Tail risk is subdued. VIX at 14.3 (22th percentile) reflects low implied volatility and risk-on sentiment. While cheap protection is tempting, premiums are low precisely because the market perceives little near-term risk. Complacency is itself a signal.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 19.2 (73th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">14.3</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">3/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">22th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">19.2</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">7.0/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">73th</span></div>
       </div>
-      <div class="lens-implication">Consider light tail hedge; deploy proceeds into convex risk-on positions with positive momentum.</div>
+      <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
 
     <!-- 2. Macro Cycle Analysis -->
@@ -396,15 +399,15 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (2.4% CPI YoY). Debt cycle stress is 5/10. Yield curve stands at -0.15pp. The closest historical period is 2005 Mid-Cycle — Low vol expansion. Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (0.8% INDPRO YoY) with manageable inflation (3.7% CPI YoY). Debt cycle stress is 4.2/10. Yield curve stands at 0.48pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">2.4%</span></div>
-        <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">5/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">-0.15pp</span></div>
+        <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.7%</span></div>
+        <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.2/10</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.48pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
-        Closest historical analog: <span style="color:var(--text)">2005 Mid-Cycle</span>
+        Closest historical analog: <span style="color:var(--text)">Housing boom</span>
       </div>
       
       <div class="lens-implication">Lean into growth assets; real assets and commodity producers benefit from this backdrop.</div>
@@ -418,52 +421,52 @@
         ">
         Bull Quiet
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 65% probability. Bayesian credible interval for this regime: [48%, 80%] at 90% confidence. Model uncertainty is low at 18%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [54%, 87%] at 90% confidence. Model uncertainty is high at 50%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
-      
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">bull quiet</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:65%;height:100%;background:
-            var(--green)
-            ;border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">65%</div>
-      </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull trend</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:20%;height:100%;background:
+          <div style="width:0%;height:100%;background:
             var(--accent)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">20%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">bull quiet</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:100%;height:100%;background:
+            var(--green)
+            ;border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">100%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">stressed</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:10%;height:100%;background:
+          <div style="width:0%;height:100%;background:
             var(--orange)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">10%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">crisis</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:5%;height:100%;background:
+          <div style="width:0%;height:100%;background:
             var(--red);border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">5%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
       </div>
       
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          82%
+          50%
         </span>
       </div>
       
@@ -474,54 +477,42 @@
     <div class="lens-card cycle-sentiment">
       <div class="lens-name">Market Cycle &amp; Sentiment Analysis</div>
       <div class="lens-stance" style="color:
-        var(--yellow)
+        var(--orange)
         ">
-        Calm Stress
+        Stressed Stress
       </div>
-      <div class="lens-body">Moderate stress conditions (score 3.2/10). Markets are in a low-stress phase. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
+      <div class="lens-body">Elevated market stress (score 6.2/10, regime: stressed). Primary driver: geopolitical risk (GPR) at 99th percentile of history. Uncertainty indicators are above average. Risk premiums are rising. This is a caution zone — not full panic, but enough to warrant defensive positioning and reduced leverage.</div>
       <div class="stat-row">
         
         
-        <div class="stat-chip">
-          <span class="sck">GPR</span>
-          <span class="scv">28th</span>
-        </div>
         
         
         
-        <div class="stat-chip">
-          <span class="sck">EPU</span>
-          <span class="scv">35th</span>
-        </div>
         
         
-        
-        <div class="stat-chip">
-          <span class="sck">STLFSI</span>
-          <span class="scv">22th</span>
-        </div>
         
         
       </div>
-      <div class="lens-implication">Maintain current allocation; use dips as opportunities if regime and macro confirm.</div>
+      <div class="lens-implication">Reduce speculative exposure; preserve capital while stress indicators remain elevated.</div>
     </div>
 
     <!-- 5. Monetary Policy Analysis -->
     <div class="lens-card monetary">
       <div class="lens-name">Monetary Policy Analysis</div>
       <div class="lens-stance" style="color:
-        var(--muted)">
-        Neutral
-        <span style="font-size:13px;font-weight:400;margin-left:8px">+1.5</span>
+        var(--green)
+        ">
+        Dovish
+        <span style="font-size:13px;font-weight:400;margin-left:8px">-2.8</span>
       </div>
-      <div class="lens-body">Fed language analysis scores the current FOMC stance at +1.5/10 (mildly_hawkish), mildly tightening. Month-over-month delta: -0.8. The central bank's tone has been parsed against 26 historical turning-point meetings for language analog matching. Next FOMC meeting: 2026-06-17 (33 days away). Fed rhetoric is balanced, suggesting a data-dependent hold.</div>
+      <div class="lens-body">Fed language analysis scores the current FOMC stance at -2.8/10 (mildly_dovish), moderately easing. Month-over-month delta: -2.8. The central bank's tone has been parsed against 26 historical turning-point meetings for language analog matching. Next FOMC meeting: 2026-06-10 (26 days away). Easing signals are present in recent statements.</div>
 
       <!-- Hawk/dove bar -->
       <div class="hd-bar-wrap">
         <div class="hd-center"></div>
         <div class="hd-fill" style="
-          left:50%;width:7%;
-          background:var(--red)">
+          right:50%;width:13%;
+          background:var(--green)">
         </div>
       </div>
       <div class="hd-labels"><span>Dovish −10</span><span>Hawkish +10</span></div>
@@ -530,15 +521,21 @@
       <div class="meeting-list">
         
         <div class="meeting-pill">
-          <span class="mp-date">2026-06-17</span>
-          <span class="mp-days">33d</span>
-          
+          <span class="mp-date">2026-06-10</span>
+          <span class="mp-days">26d</span>
+          <span class="mp-sep">SEP</span>
         </div>
         
         <div class="meeting-pill">
           <span class="mp-date">2026-07-29</span>
           <span class="mp-days">75d</span>
           
+        </div>
+        
+        <div class="meeting-pill">
+          <span class="mp-date">2026-09-16</span>
+          <span class="mp-days">124d</span>
+          <span class="mp-sep">SEP</span>
         </div>
         
       </div>
@@ -553,11 +550,11 @@
         var(--green)">
         Regime Stable
       </div>
-      <div class="lens-body">Systemic risk indicators are stable (score 2/10). The current regime has been running for 88 days without statistical evidence of a break. Debt-to-GDP at 124% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
+      <div class="lens-body">Systemic risk indicators are stable (score 0.3/10). The current regime has been running for 197 days without statistical evidence of a break. Debt-to-GDP at 123% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">88d</span></div>
-        <div class="stat-chip"><span class="sck">CP Score</span><span class="scv">2/10</span></div>
-        <div class="stat-chip"><span class="sck">Debt/GDP</span><span class="scv">124%</span></div>
+        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">197d</span></div>
+        <div class="stat-chip"><span class="sck">CP Score</span><span class="scv">0.3/10</span></div>
+        <div class="stat-chip"><span class="sck">Debt/GDP</span><span class="scv">123%</span></div>
       </div>
       <div class="lens-implication">No systemic alarm; maintain current positioning; monitor debt-to-GDP trajectory.</div>
     </div>
@@ -568,14 +565,16 @@
   <div class="section-label">Synthesis — Combined View</div>
   <div class="synthesis-card">
     <div class="synthesis-title">⊕ Cross-Strategy Synthesis</div>
-    <div class="synthesis-body">The cross-strategy consensus leans risk-on. Regime, macro, sentiment, and monetary signals are collectively supportive of growth-oriented positioning. Conditions favor holding or adding to convex positions. The macro cycle is in expansion, providing a supportive backdrop for risk assets. Monetary policy is neutral, providing no clear directional impulse. Overall posture: RISK-ON.</div>
+    <div class="synthesis-body">Signals are mixed across the six lenses — some defensive, some constructive. 2 of 6 signals lean defensive, 3 lean risk-on. This divergence calls for balanced positioning: maintain hedges but do not exit core holdings. The macro cycle is in expansion, providing a supportive backdrop for risk assets. Monetary policy is easing, a tailwind historically. Overall posture: MIXED.</div>
     <div class="synthesis-posture">
       
       <span class="posture-tag">Risk-On Conditions</span>
       
-      <span class="posture-tag">Hedge Light</span>
+      <span class="posture-tag">Hedge Elevated</span>
       
       <span class="posture-tag">Macro Expansionary</span>
+      
+      <span class="posture-tag">Monetary Easing</span>
       
     </div>
   </div>
