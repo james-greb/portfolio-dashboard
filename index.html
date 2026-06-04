@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-06-03 13:02 UTC
+        Multi-strategy analysis · Updated 2026-06-04 12:32 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">June 03, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">June 04, 2026</span>
     </div>
   </header>
 
@@ -320,7 +320,7 @@
       <div class="ptvalue" style="color:
         var(--yellow)
         ">
-        4.8/10
+        4.5/10
       </div>
       <div class="ptsub">Cautious</div>
     </div>
@@ -331,9 +331,9 @@
       <div class="ptvalue" style="color:
         var(--red)
         ">
-        8.0/10
+        7.0/10
       </div>
-      <div class="ptsub">STRONG</div>
+      <div class="ptsub">ADD</div>
     </div>
 
     <!-- Macro quadrant -->
@@ -380,13 +380,13 @@
       <div class="lens-stance" style="color:
         var(--red)
         ">
-        Maximum Hedge — BUY
+        Elevated Risk — BUY
       </div>
-      <div class="lens-body">Tail risk indicators are elevated. VIX at 16.2 (28th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 16.6 (39th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">16.2</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">8.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">28th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">16.6</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">7.0/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">39th</span></div>
       </div>
       <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
@@ -421,33 +421,14 @@
         ">
         Bull Quiet
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [91%, 97%] at 90% confidence. Model uncertainty is low at 18%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [92%, 97%] at 90% confidence. Model uncertainty is low at 15%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
-      
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">crisis</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:0%;height:100%;background:
-            var(--red);border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
-      </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull trend</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
           <div style="width:0%;height:100%;background:
             var(--accent)
-            ;border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
-      </div>
-      
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">stressed</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:0%;height:100%;background:
-            var(--orange)
             ;border-radius:2px"></div>
         </div>
         <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
@@ -463,10 +444,29 @@
         <div style="width:35px;text-align:right;color:var(--muted)">100%</div>
       </div>
       
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">stressed</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:0%;height:100%;background:
+            var(--orange)
+            ;border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">crisis</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:0%;height:100%;background:
+            var(--red);border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
+      </div>
+      
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          82%
+          85%
         </span>
       </div>
       
@@ -481,7 +481,7 @@
         ">
         Cautious Stress
       </div>
-      <div class="lens-body">Moderate stress conditions (score 4.8/10). Primary driver: options hedging demand (Put/Call) at 40th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
+      <div class="lens-body">Moderate stress conditions (score 4.5/10). Primary driver: options hedging demand (Put/Call) at 28th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
       <div class="stat-row">
         
         
@@ -503,7 +503,7 @@
         Dovish
         <span style="font-size:13px;font-weight:400;margin-left:8px">-2.8</span>
       </div>
-      <div class="lens-body">Fed language analysis scores the current FOMC stance at -2.8/10 (mildly_dovish), moderately easing. Month-over-month delta: -2.8. The central bank's tone has been parsed against 26 historical turning-point meetings for language analog matching. Next FOMC meeting: 2026-06-10 (7 days away). Easing signals are present in recent statements.</div>
+      <div class="lens-body">Fed language analysis scores the current FOMC stance at -2.8/10 (mildly_dovish), moderately easing. Month-over-month delta: -2.8. The central bank's tone has been parsed against 26 historical turning-point meetings for language analog matching. Next FOMC meeting: 2026-06-10 (6 days away). Easing signals are present in recent statements.</div>
 
       <!-- Hawk/dove bar -->
       <div class="hd-bar-wrap">
@@ -520,19 +520,19 @@
         
         <div class="meeting-pill">
           <span class="mp-date">2026-06-10</span>
-          <span class="mp-days">7d</span>
+          <span class="mp-days">6d</span>
           <span class="mp-sep">SEP</span>
         </div>
         
         <div class="meeting-pill">
           <span class="mp-date">2026-07-29</span>
-          <span class="mp-days">56d</span>
+          <span class="mp-days">55d</span>
           
         </div>
         
         <div class="meeting-pill">
           <span class="mp-date">2026-09-16</span>
-          <span class="mp-days">105d</span>
+          <span class="mp-days">104d</span>
           <span class="mp-sep">SEP</span>
         </div>
         
@@ -591,7 +591,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · June 03, 2026<br>
+    Market Intelligence Dashboard · June 04, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
