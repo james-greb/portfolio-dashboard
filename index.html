@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-07-24 13:04 UTC
+        Multi-strategy analysis · Updated 2026-07-27 13:56 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">July 24, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">July 27, 2026</span>
     </div>
   </header>
 
@@ -308,10 +308,10 @@
     <!-- Regime -->
     <div class="pulse-tile">
       <div class="ptlabel">Market Regime</div>
-      <div class="ptvalue" style="color:#6366f1">
-        Bull Trend
+      <div class="ptvalue" style="color:var(--green)">
+        Bull Quiet
       </div>
-      <div class="ptsub">Trending higher</div>
+      <div class="ptsub">Low vol, risk-on</div>
     </div>
 
     <!-- Sentiment -->
@@ -320,7 +320,7 @@
       <div class="ptvalue" style="color:
         var(--yellow)
         ">
-        5.2/10
+        3.5/10
       </div>
       <div class="ptsub">Cautious</div>
     </div>
@@ -364,7 +364,7 @@
         var(--green)">
         Stable
       </div>
-      <div class="ptsub">192d current run</div>
+      <div class="ptsub">193d current run</div>
     </div>
   </div>
 
@@ -381,11 +381,11 @@
         ">
         Elevated Risk — BUY
       </div>
-      <div class="lens-body">Tail risk indicators are elevated. VIX at 18.8 (71th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 17.8 (60th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">18.8</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">17.8</span></div>
         <div class="stat-chip"><span class="sck">Signal</span><span class="scv">7.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">71th</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">60th</span></div>
       </div>
       <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
@@ -398,11 +398,11 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (0.7% INDPRO YoY) with manageable inflation (3.2% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.34pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (0.7% INDPRO YoY) with manageable inflation (3.2% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.36pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
         <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.2%</span></div>
         <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.1/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.34pp</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.36pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
@@ -416,21 +416,31 @@
     <div class="lens-card quant-model">
       <div class="lens-name">Quantitative Regime Model</div>
       <div class="lens-stance" style="color:
-        #6366f1
+        var(--green)
         ">
-        Bull Trend
+        Bull Quiet
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Trend with 98% probability. Bayesian credible interval for this regime: [15%, 38%] at 90% confidence. Model uncertainty is high at 46%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 99% probability. Bayesian credible interval for this regime: [79%, 91%] at 90% confidence. Model uncertainty is moderate at 38%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull quiet</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:2%;height:100%;background:
+          <div style="width:99%;height:100%;background:
             var(--green)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">2%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">99%</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">stressed</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:1%;height:100%;background:
+            var(--orange)
+            ;border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">1%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -443,33 +453,23 @@
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">stressed</div>
+        <div style="width:90px;color:var(--muted)">bull trend</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
           <div style="width:0%;height:100%;background:
-            var(--orange)
+            var(--accent)
             ;border-radius:2px"></div>
         </div>
         <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
       </div>
       
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">bull trend</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:98%;height:100%;background:
-            var(--accent)
-            ;border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">98%</div>
-      </div>
-      
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          54%
+          62%
         </span>
       </div>
       
-      <div class="lens-implication">Selective risk-taking is warranted; trend-following momentum strategies are well-positioned.</div>
+      <div class="lens-implication">Conditions favor sustained deployment; maintain or increase risk-on tilt within conviction limits.</div>
     </div>
 
     <!-- 4. Market Cycle & Sentiment -->
@@ -480,10 +480,8 @@
         ">
         Cautious Stress
       </div>
-      <div class="lens-body">Moderate stress conditions (score 5.2/10). Primary driver: options hedging demand (Put/Call) at 61th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
+      <div class="lens-body">Moderate stress conditions (score 3.5/10). Primary driver: options hedging demand (Put/Call) at 4th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
       <div class="stat-row">
-        
-        
         
         
         
@@ -524,9 +522,9 @@
         var(--green)">
         Regime Stable
       </div>
-      <div class="lens-body">Systemic risk indicators are stable (score 0.3/10). The current regime has been running for 192 days without statistical evidence of a break. Debt-to-GDP at 123% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
+      <div class="lens-body">Systemic risk indicators are stable (score 0.3/10). The current regime has been running for 193 days without statistical evidence of a break. Debt-to-GDP at 123% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">192d</span></div>
+        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">193d</span></div>
         <div class="stat-chip"><span class="sck">CP Score</span><span class="scv">0.3/10</span></div>
         <div class="stat-chip"><span class="sck">Debt/GDP</span><span class="scv">123%</span></div>
       </div>
@@ -539,10 +537,10 @@
   <div class="section-label">Synthesis — Combined View</div>
   <div class="synthesis-card">
     <div class="synthesis-title">⊕ Cross-Strategy Synthesis</div>
-    <div class="synthesis-body">Signals are mixed across the six lenses — some defensive, some constructive. 1 of 6 signals lean defensive, 3 lean risk-on. This divergence calls for balanced positioning: maintain hedges but do not exit core holdings. The macro cycle is in expansion, providing a supportive backdrop for risk assets. Monetary policy is neutral, providing no clear directional impulse. Overall posture: MIXED.</div>
+    <div class="synthesis-body">The cross-strategy consensus leans risk-on. Regime, macro, sentiment, and monetary signals are collectively supportive of growth-oriented positioning. Conditions favor holding or adding to convex positions. The macro cycle is in expansion, providing a supportive backdrop for risk assets. Monetary policy is neutral, providing no clear directional impulse. Overall posture: RISK-ON.</div>
     <div class="synthesis-posture">
       
-      <span class="posture-tag">Selective Risk</span>
+      <span class="posture-tag">Risk-On Conditions</span>
       
       <span class="posture-tag">Hedge Elevated</span>
       
@@ -565,7 +563,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · July 24, 2026<br>
+    Market Intelligence Dashboard · July 27, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
