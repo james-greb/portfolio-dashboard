@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-09-02 15:16 UTC
+        Multi-strategy analysis · Updated 2026-09-03 15:10 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">September 02, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">September 03, 2026</span>
     </div>
   </header>
 
@@ -329,11 +329,11 @@
     <div class="pulse-tile">
       <div class="ptlabel">Tail Hedge Signal</div>
       <div class="ptvalue" style="color:
-        var(--orange)
+        var(--red)
         ">
-        6.0/10
+        9.0/10
       </div>
-      <div class="ptsub">ADD</div>
+      <div class="ptsub">STRONG</div>
     </div>
 
     <!-- Macro quadrant -->
@@ -377,17 +377,17 @@
     <div class="lens-card tail-risk">
       <div class="lens-name">Tail Risk &amp; Convexity Strategy</div>
       <div class="lens-stance" style="color:
-        var(--orange)
+        var(--red)
         ">
-        Elevated Risk — BUY
+        Maximum Hedge — BUY
       </div>
-      <div class="lens-body">Tail risk is moderate. VIX at 15.5 (18th percentile) is neither complacent nor panicked. Markets are pricing some uncertainty but not crisis-level stress. Maintaining core convex positions is appropriate while monitoring for escalation.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 14.9 (9th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">15.5</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">6.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">18th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">14.9</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">9.0/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">9th</span></div>
       </div>
-      <div class="lens-implication">Hold tail hedge positions; re-evaluate if VIX moves above the 70th percentile.</div>
+      <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
 
     <!-- 2. Macro Cycle Analysis -->
@@ -420,7 +420,7 @@
         ">
         Bull Quiet
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 94% probability. Bayesian credible interval for this regime: [72%, 86%] at 90% confidence. Model uncertainty is moderate at 38%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 99% probability. Bayesian credible interval for this regime: [73%, 87%] at 90% confidence. Model uncertainty is moderate at 38%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -436,21 +436,21 @@
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull trend</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:6%;height:100%;background:
+          <div style="width:1%;height:100%;background:
             var(--accent)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">6%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">1%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull quiet</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:94%;height:100%;background:
+          <div style="width:99%;height:100%;background:
             var(--green)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">94%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">99%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -565,7 +565,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · September 02, 2026<br>
+    Market Intelligence Dashboard · September 03, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
