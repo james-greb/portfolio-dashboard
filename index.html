@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-09-18 15:07 UTC
+        Multi-strategy analysis · Updated 2026-09-21 17:11 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">September 18, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">September 21, 2026</span>
     </div>
   </header>
 
@@ -364,7 +364,7 @@
         var(--green)">
         Stable
       </div>
-      <div class="ptsub">193d current run</div>
+      <div class="ptsub">194d current run</div>
     </div>
   </div>
 
@@ -381,11 +381,11 @@
         ">
         Elevated Risk — BUY
       </div>
-      <div class="lens-body">Tail risk indicators are elevated. VIX at 15.3 (14th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 15.0 (10th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">15.3</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">15.0</span></div>
         <div class="stat-chip"><span class="sck">Signal</span><span class="scv">7.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">14th</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">10th</span></div>
       </div>
       <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
@@ -398,11 +398,11 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.4% INDPRO YoY) with manageable inflation (3.0% CPI YoY). Debt cycle stress is 3.9/10. Yield curve stands at 0.27pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.4% INDPRO YoY) with manageable inflation (3.0% CPI YoY). Debt cycle stress is 4.0/10. Yield curve stands at 0.25pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
         <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.0%</span></div>
-        <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">3.9/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.27pp</span></div>
+        <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.0/10</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.25pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
@@ -420,7 +420,7 @@
         ">
         Bull Quiet
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [24%, 67%] at 90% confidence. Model uncertainty is high at 56%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [61%, 87%] at 90% confidence. Model uncertainty is high at 43%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -444,6 +444,15 @@
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">crisis</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:0%;height:100%;background:
+            var(--red);border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull trend</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
           <div style="width:0%;height:100%;background:
@@ -453,19 +462,10 @@
         <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
       </div>
       
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">crisis</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:0%;height:100%;background:
-            var(--red);border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
-      </div>
-      
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          44%
+          57%
         </span>
       </div>
       
@@ -524,9 +524,9 @@
         var(--green)">
         Regime Stable
       </div>
-      <div class="lens-body">Systemic risk indicators are stable (score 0.3/10). The current regime has been running for 193 days without statistical evidence of a break. Debt-to-GDP at 123% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
+      <div class="lens-body">Systemic risk indicators are stable (score 0.3/10). The current regime has been running for 194 days without statistical evidence of a break. Debt-to-GDP at 123% is a structural risk but not an immediate catalyst. BOCPD run-length distribution suggests continuity.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">193d</span></div>
+        <div class="stat-chip"><span class="sck">Run Length</span><span class="scv">194d</span></div>
         <div class="stat-chip"><span class="sck">CP Score</span><span class="scv">0.3/10</span></div>
         <div class="stat-chip"><span class="sck">Debt/GDP</span><span class="scv">123%</span></div>
       </div>
@@ -565,7 +565,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · September 18, 2026<br>
+    Market Intelligence Dashboard · September 21, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
