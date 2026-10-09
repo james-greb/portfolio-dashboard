@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-10-08 17:59 UTC
+        Multi-strategy analysis · Updated 2026-10-09 17:33 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">October 08, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">October 09, 2026</span>
     </div>
   </header>
 
@@ -308,10 +308,10 @@
     <!-- Regime -->
     <div class="pulse-tile">
       <div class="ptlabel">Market Regime</div>
-      <div class="ptvalue" style="color:var(--green)">
-        Bull Quiet
+      <div class="ptvalue" style="color:#6366f1">
+        Bull Trend
       </div>
-      <div class="ptsub">Low vol, risk-on</div>
+      <div class="ptsub">Trending higher</div>
     </div>
 
     <!-- Sentiment -->
@@ -331,9 +331,9 @@
       <div class="ptvalue" style="color:
         var(--red)
         ">
-        7.0/10
+        9.0/10
       </div>
-      <div class="ptsub">ADD</div>
+      <div class="ptsub">STRONG</div>
     </div>
 
     <!-- Macro quadrant -->
@@ -379,13 +379,13 @@
       <div class="lens-stance" style="color:
         var(--red)
         ">
-        Elevated Risk — BUY
+        Maximum Hedge — BUY
       </div>
-      <div class="lens-body">Tail risk indicators are elevated. VIX at 15.9 (27th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
+      <div class="lens-body">Tail risk indicators are elevated. VIX at 14.9 (9th historical percentile) signals above-average implied volatility. The options market is pricing meaningful left-tail risk. Convexity protection is attractive at current premiums — the cost of insurance is rising but so is the probability of needing it.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">15.9</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">7.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">27th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">14.9</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">9.0/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">9th</span></div>
       </div>
       <div class="lens-implication">Add tail protection; consider OTM puts on broad indices or hold TAIL/CAOS ETFs at full weight.</div>
     </div>
@@ -398,11 +398,11 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.0% CPI YoY). Debt cycle stress is 4.0/10. Yield curve stands at 0.51pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.0% CPI YoY). Debt cycle stress is 4.0/10. Yield curve stands at 0.47pp. The closest historical period is Housing boom — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
         <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.0%</span></div>
         <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.0/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.51pp</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.47pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
@@ -416,21 +416,31 @@
     <div class="lens-card quant-model">
       <div class="lens-name">Quantitative Regime Model</div>
       <div class="lens-stance" style="color:
-        var(--green)
+        #6366f1
         ">
-        Bull Quiet
+        Bull Trend
       </div>
-      <div class="lens-body">The statistical regime model places the market in Bull Quiet with 100% probability. Bayesian credible interval for this regime: [96%, 98%] at 90% confidence. Model uncertainty is low at 11%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Bull Trend with 98% probability. Bayesian credible interval for this regime: [5%, 16%] at 90% confidence. Model uncertainty is moderate at 26%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">bull quiet</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:100%;height:100%;background:
+          <div style="width:2%;height:100%;background:
             var(--green)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">100%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">2%</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
+        <div style="width:90px;color:var(--muted)">bull trend</div>
+        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
+          <div style="width:98%;height:100%;background:
+            var(--accent)
+            ;border-radius:2px"></div>
+        </div>
+        <div style="width:35px;text-align:right;color:var(--muted)">98%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -452,24 +462,14 @@
         <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
       </div>
       
-      <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
-        <div style="width:90px;color:var(--muted)">bull trend</div>
-        <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:0%;height:100%;background:
-            var(--accent)
-            ;border-radius:2px"></div>
-        </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
-      </div>
-      
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          89%
+          74%
         </span>
       </div>
       
-      <div class="lens-implication">Conditions favor sustained deployment; maintain or increase risk-on tilt within conviction limits.</div>
+      <div class="lens-implication">Selective risk-taking is warranted; trend-following momentum strategies are well-positioned.</div>
     </div>
 
     <!-- 4. Market Cycle & Sentiment -->
@@ -542,7 +542,7 @@
     <div class="synthesis-body">Signals are mixed across the six lenses — some defensive, some constructive. 1 of 6 signals lean defensive, 3 lean risk-on. This divergence calls for balanced positioning: maintain hedges but do not exit core holdings. The macro cycle is in expansion, providing a supportive backdrop for risk assets. Monetary policy is neutral, providing no clear directional impulse. Overall posture: MIXED.</div>
     <div class="synthesis-posture">
       
-      <span class="posture-tag">Risk-On Conditions</span>
+      <span class="posture-tag">Selective Risk</span>
       
       <span class="posture-tag">Hedge Elevated</span>
       
@@ -565,7 +565,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · October 08, 2026<br>
+    Market Intelligence Dashboard · October 09, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
