@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-11-24 21:28 UTC
+        Multi-strategy analysis · Updated 2026-11-25 20:37 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">November 24, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">November 25, 2026</span>
     </div>
   </header>
 
@@ -308,10 +308,10 @@
     <!-- Regime -->
     <div class="pulse-tile">
       <div class="ptlabel">Market Regime</div>
-      <div class="ptvalue" style="color:var(--orange)">
-        Stressed
+      <div class="ptvalue" style="color:var(--red)">
+        Crisis
       </div>
-      <div class="ptsub">Elevated risk</div>
+      <div class="ptsub">Defensive posture</div>
     </div>
 
     <!-- Sentiment -->
@@ -320,7 +320,7 @@
       <div class="ptvalue" style="color:
         var(--yellow)
         ">
-        4.4/10
+        4.6/10
       </div>
       <div class="ptsub">Cautious</div>
     </div>
@@ -329,9 +329,8 @@
     <div class="pulse-tile">
       <div class="ptlabel">Tail Hedge Signal</div>
       <div class="ptvalue" style="color:
-        var(--orange)
-        ">
-        5.0/10
+        var(--green)">
+        4.5/10
       </div>
       <div class="ptsub">HOLD</div>
     </div>
@@ -377,15 +376,14 @@
     <div class="lens-card tail-risk">
       <div class="lens-name">Tail Risk &amp; Convexity Strategy</div>
       <div class="lens-stance" style="color:
-        var(--orange)
-        ">
+        var(--green)">
         Moderate Risk — HOLD
       </div>
-      <div class="lens-body">Tail risk is moderate. VIX at 26.4 (95th percentile) is neither complacent nor panicked. Markets are pricing some uncertainty but not crisis-level stress. Maintaining core convex positions is appropriate while monitoring for escalation.</div>
+      <div class="lens-body">Tail risk is moderate. VIX at 28.0 (98th percentile) is neither complacent nor panicked. Markets are pricing some uncertainty but not crisis-level stress. Maintaining core convex positions is appropriate while monitoring for escalation.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">26.4</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">5.0/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">95th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">28.0</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">4.5/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">98th</span></div>
       </div>
       <div class="lens-implication">Hold tail hedge positions; re-evaluate if VIX moves above the 70th percentile.</div>
     </div>
@@ -398,11 +396,11 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.8% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.29pp. The closest historical period is GFC deflationary deleveraging — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.8% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.28pp. The closest historical period is GFC deflationary deleveraging — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
         <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.8%</span></div>
         <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.1/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.29pp</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.28pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
@@ -416,21 +414,20 @@
     <div class="lens-card quant-model">
       <div class="lens-name">Quantitative Regime Model</div>
       <div class="lens-stance" style="color:
-        var(--orange)
-        ">
-        Stressed
+        var(--red)">
+        Crisis
       </div>
-      <div class="lens-body">The statistical regime model places the market in Stressed with 100% probability. Bayesian credible interval for this regime: [27%, 82%] at 90% confidence. Model uncertainty is high at 65%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Crisis with 94% probability. Bayesian credible interval for this regime: [7%, 41%] at 90% confidence. Model uncertainty is high at 60%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">stressed</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:100%;height:100%;background:
+          <div style="width:6%;height:100%;background:
             var(--orange)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">100%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">6%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -446,10 +443,10 @@
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">crisis</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:0%;height:100%;background:
+          <div style="width:94%;height:100%;background:
             var(--red);border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">0%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">94%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -465,7 +462,7 @@
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          35%
+          40%
         </span>
       </div>
       
@@ -480,7 +477,7 @@
         ">
         Cautious Stress
       </div>
-      <div class="lens-body">Moderate stress conditions (score 4.4/10). Primary driver: options hedging demand (Put/Call) at 23th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
+      <div class="lens-body">Moderate stress conditions (score 4.6/10). Primary driver: options hedging demand (Put/Call) at 32th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
       <div class="stat-row">
         
         
@@ -565,7 +562,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · November 24, 2026<br>
+    Market Intelligence Dashboard · November 25, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
