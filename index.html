@@ -294,12 +294,12 @@
     <div>
       <h1>Market Intelligence Dashboard</h1>
       <div class="subtitle">
-        Multi-strategy analysis · Updated 2026-11-25 20:37 UTC
+        Multi-strategy analysis · Updated 2026-11-26 20:29 UTC
       </div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
       <span class="ai-badge">⚡ AI-Generated Analysis</span>
-      <span style="font-size:11px;color:var(--muted)">November 25, 2026</span>
+      <span style="font-size:11px;color:var(--muted)">November 26, 2026</span>
     </div>
   </header>
 
@@ -318,19 +318,20 @@
     <div class="pulse-tile">
       <div class="ptlabel">Stress Score</div>
       <div class="ptvalue" style="color:
-        var(--yellow)
+        var(--orange)
         ">
-        4.6/10
+        5.6/10
       </div>
-      <div class="ptsub">Cautious</div>
+      <div class="ptsub">Stressed</div>
     </div>
 
     <!-- Tail hedge -->
     <div class="pulse-tile">
       <div class="ptlabel">Tail Hedge Signal</div>
       <div class="ptvalue" style="color:
-        var(--green)">
-        4.5/10
+        var(--orange)
+        ">
+        5.0/10
       </div>
       <div class="ptsub">HOLD</div>
     </div>
@@ -376,14 +377,15 @@
     <div class="lens-card tail-risk">
       <div class="lens-name">Tail Risk &amp; Convexity Strategy</div>
       <div class="lens-stance" style="color:
-        var(--green)">
+        var(--orange)
+        ">
         Moderate Risk — HOLD
       </div>
-      <div class="lens-body">Tail risk is moderate. VIX at 28.0 (98th percentile) is neither complacent nor panicked. Markets are pricing some uncertainty but not crisis-level stress. Maintaining core convex positions is appropriate while monitoring for escalation.</div>
+      <div class="lens-body">Tail risk is moderate. VIX at 26.8 (96th percentile) is neither complacent nor panicked. Markets are pricing some uncertainty but not crisis-level stress. Maintaining core convex positions is appropriate while monitoring for escalation.</div>
       <div class="stat-row">
-        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">28.0</span></div>
-        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">4.5/10</span></div>
-        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">98th</span></div>
+        <div class="stat-chip"><span class="sck">VIX</span><span class="scv">26.8</span></div>
+        <div class="stat-chip"><span class="sck">Signal</span><span class="scv">5.0/10</span></div>
+        <div class="stat-chip"><span class="sck">VIX pct</span><span class="scv">96th</span></div>
       </div>
       <div class="lens-implication">Hold tail hedge positions; re-evaluate if VIX moves above the 70th percentile.</div>
     </div>
@@ -396,11 +398,11 @@
         ">
         Expansion
       </div>
-      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.8% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.28pp. The closest historical period is GFC deflationary deleveraging — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
+      <div class="lens-body">The macro cycle is in expansion: growth is positive (1.8% INDPRO YoY) with manageable inflation (3.8% CPI YoY). Debt cycle stress is 4.1/10. Yield curve stands at 0.24pp. The closest historical period is GFC deflationary deleveraging — . Historically, this quadrant favors equities, commodities, and cyclical assets.</div>
       <div class="stat-row">
         <div class="stat-chip"><span class="sck">CPI YoY</span><span class="scv">3.8%</span></div>
         <div class="stat-chip"><span class="sck">Debt Cycle</span><span class="scv">4.1/10</span></div>
-        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.28pp</span></div>
+        <div class="stat-chip"><span class="sck">Yield Curve</span><span class="scv">0.24pp</span></div>
       </div>
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
@@ -417,17 +419,17 @@
         var(--red)">
         Crisis
       </div>
-      <div class="lens-body">The statistical regime model places the market in Crisis with 94% probability. Bayesian credible interval for this regime: [7%, 41%] at 90% confidence. Model uncertainty is high at 60%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
+      <div class="lens-body">The statistical regime model places the market in Crisis with 98% probability. Bayesian credible interval for this regime: [6%, 39%] at 90% confidence. Model uncertainty is high at 61%. The HMM uses four states ordered by expected return: Crisis → Stressed → Bull Trend → Bull Quiet.</div>
       <!-- Regime probabilities -->
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">stressed</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:6%;height:100%;background:
+          <div style="width:2%;height:100%;background:
             var(--orange)
             ;border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">6%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">2%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -443,10 +445,10 @@
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
         <div style="width:90px;color:var(--muted)">crisis</div>
         <div style="flex:1;background:var(--surface2);border-radius:2px;height:6px;overflow:hidden">
-          <div style="width:94%;height:100%;background:
+          <div style="width:98%;height:100%;background:
             var(--red);border-radius:2px"></div>
         </div>
-        <div style="width:35px;text-align:right;color:var(--muted)">94%</div>
+        <div style="width:35px;text-align:right;color:var(--muted)">98%</div>
       </div>
       
       <div style="display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px">
@@ -462,7 +464,7 @@
       
       <div style="font-size:11px;color:var(--muted);margin-top:8px">
         Model confidence: <span style="color:var(--green)">
-          40%
+          39%
         </span>
       </div>
       
@@ -473,11 +475,11 @@
     <div class="lens-card cycle-sentiment">
       <div class="lens-name">Market Cycle &amp; Sentiment Analysis</div>
       <div class="lens-stance" style="color:
-        var(--yellow)
+        var(--orange)
         ">
-        Cautious Stress
+        Stressed Stress
       </div>
-      <div class="lens-body">Moderate stress conditions (score 4.6/10). Primary driver: options hedging demand (Put/Call) at 32th percentile of history. Markets are neither complacent nor fearful. This neutral zone is common in mid-cycle environments and requires signal confirmation from trend and macro before making directional calls.</div>
+      <div class="lens-body">Elevated market stress (score 5.6/10, regime: stressed). Primary driver: options hedging demand (Put/Call) at 76th percentile of history. Uncertainty indicators are above average. Risk premiums are rising. This is a caution zone — not full panic, but enough to warrant defensive positioning and reduced leverage.</div>
       <div class="stat-row">
         
         
@@ -487,7 +489,7 @@
         
         
       </div>
-      <div class="lens-implication">Maintain current allocation; use dips as opportunities if regime and macro confirm.</div>
+      <div class="lens-implication">Reduce speculative exposure; preserve capital while stress indicators remain elevated.</div>
     </div>
 
     <!-- 5. Monetary Policy Analysis -->
@@ -562,7 +564,7 @@
 
   <!-- ── Footer ── -->
   <footer class="site-footer">
-    Market Intelligence Dashboard · November 25, 2026<br>
+    Market Intelligence Dashboard · November 26, 2026<br>
     Data sources: Federal Reserve, FRED, yfinance (public) · Models: HMM, Bayesian inference, BOCPD, GPR/EPU/STLFSI composite<br>
     <span style="color:#374151">Updated daily · AI-generated · Not financial advice</span>
   </footer>
